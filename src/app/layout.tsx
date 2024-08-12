@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
-        <header>ヘッダー</header>
+      <body className="container mx-auto bg-slate-700 text-slate-50">
+        <Header />
         {children}
+        <footer>フッター</footer>
       </body>
     </html>
   );
