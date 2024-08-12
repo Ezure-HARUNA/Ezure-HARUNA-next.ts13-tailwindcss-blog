@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="py-5 px-10 border-b flex justify-between items-center">
+    <header className="py-5 px-10 border-b flex justify-between items-center mb-4">
       <div>
         <h1 className="text-2xl font-extrabold">
           <Link href="/">Next13 Blog</Link>
