@@ -5,8 +5,8 @@ import React from "react";
 const ArticleList = () => {
   return (
     <div>
-      <article>
-        <Link href="#">
+      <article className="shadow my4 flex-col">
+        <Link href="#" className="hover:opacity-75">
           <Image
             src="/images/chem.png"
             alt="Example"
@@ -15,17 +15,28 @@ const ArticleList = () => {
             className="rounded-lg shadow-lg"
           />
         </Link>
-        <div>
-          <Link href="#">テクノロジー</Link>
-          <Link href="#">Nextの勉強</Link>
-          <p>nineball, 2024/08/12公開</p>
-          <a href="#">
+        <div className="bg-white flex flex-col justify-start p6">
+          <Link href="#" className="text-blue-700 pb-4 font-bold">
+            テクノロジー
+          </Link>
+          <Link
+            href="#"
+            className="text-slate-900 text-3xl font-bold hover:text-gray-700 pb-4"
+          >
+            Nextの勉強
+          </Link>
+          <p className="text-sm pb-3 text-slate-900">
+            nineball, 2024/08/12公開
+          </p>
+          <Link href="#" className="text-slate-900 pb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iure
             voluptate vero corrupti amet ipsa eum consequuntur totam expedita
             hic, sit dolorem corporis error laboriosam necessitatibus? Libero
             fugit voluptates accusamus.
-          </a>
-          <Link href="#">続きを読む</Link>
+          </Link>
+          <Link href="#" className="text-pink-800 hover:text-black">
+            続きを読む
+          </Link>
         </div>
       </article>
     </div>
